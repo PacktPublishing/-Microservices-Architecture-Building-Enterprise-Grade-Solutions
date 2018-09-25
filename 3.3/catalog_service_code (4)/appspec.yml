@@ -1,0 +1,27 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/catalog-service
+hooks:
+  ApplicationStart:
+    - location: start_server.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStop:
+    - location: stop_server.sh
+      timeout: 300
+      runas: ec2-user
+permissions:
+  - object: /home/ec2-user
+    pattern: "catalog-service"
+    owner: ec2-user
+    mode: 700
+    type:
+      - directory
+  - object: /home/ec2-user/catalog-service
+    pattern: "*.sh"
+    owner: ec2-user
+    mode: 777
+    type:
+      - file

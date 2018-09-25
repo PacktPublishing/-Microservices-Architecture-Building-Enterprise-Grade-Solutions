@@ -1,0 +1,90 @@
+{
+    "name": "CatalogService-Pipeline",
+    "version": 1,
+    "roleArn": "arn:aws:iam::<account_id>:role/CodePipelineRole",
+    "artifactStore": {
+      "type": "S3",
+      "location": "com.packtpub.catalogservice.delivery.pipeline"
+    },
+    "stages": [
+      {
+        "name": "Source",
+        "actions": [
+          {
+            "name": "Source",
+            "runOrder": 1,
+            "actionTypeId": {
+              "category": "Source",
+              "owner": "AWS",
+              "provider": "S3",
+              "version": "1"
+            },
+            "configuration": {
+              "S3Bucket": "com.packtpub.catalogservice.source",
+              "S3ObjectKey": "CatalogService.zip",
+              "PollForSourceChanges" : "true"
+            },
+            "inputArtifacts": [],
+            "outputArtifacts": [
+              {
+                "name": "CatalogServiceSource"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Build",
+        "actions": [
+          {
+            "name": "Build",
+            "runOrder": 1,
+            "actionTypeId": {
+              "category": "Build",
+              "owner": "AWS",
+              "provider": "CodeBuild",
+              "version": "1"
+            },
+            "configuration": {
+              "ProjectName": "CatalogService_CodeBuild_project"
+            },
+            "inputArtifacts": [
+              {
+                "name": "CatalogServiceSource"
+              }
+            ],
+            "outputArtifacts": [
+              {
+                "name": "CatalogServiceBuildArtifact"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Prod",
+        "actions": [
+          {
+            "name": "Deploy",
+            "runOrder": 1,
+            "actionTypeId": {
+              "category": "Deploy",
+              "owner": "AWS",
+              "version": "1",
+              "provider": "CodeDeploy"
+            },
+            "configuration": {
+              "ApplicationName": "CatalogServiceApp",
+              "DeploymentGroupName": "CatalogServiceDG"
+            },
+            "inputArtifacts": [
+              {
+                "name": "CatalogServiceBuildArtifact"
+              }
+            ],
+            "outputArtifacts": []
+          }
+        ]
+      }
+    ]
+}
