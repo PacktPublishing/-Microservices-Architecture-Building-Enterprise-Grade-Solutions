@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadFromSongsQueue",
+      "Effect": "Allow",
+      "Action": [
+        "sqs:ReceiveMessage",
+        "sqs:DeleteMessage",
+        "sqs:GetQueueUrl",
+        "sqs:GetQueueAttributes"
+      ],
+      "Resource": "arn:aws:sqs:*:*:published_songs_queue"
+    },
+    {
+      "Sid": "UploadDocumentsToCloudsearch",
+      "Effect": "Allow",
+      "Action": [
+        "cloudsearch:document",
+        "cloudsearch:DescribeDomains"
+      ],
+      "Resource": "arn:aws:cloudsearch:*:*:domain/published-songs"
+    },
+    {
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:logs:*:*:*"
+    }
+  ]
+}
