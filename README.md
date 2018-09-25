@@ -1,17 +1,20 @@
 # Microservices Architecture [Video]
 This is the code repository for [Microservices Architecture [Video]](https://www.packtpub.com/application-development/microservices-architecture-video?utm_source=github&utm_medium=repository&utm_campaign=9781788628310), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
-	All major companies are now evolving from a monolithic to a microservices architecture in their websites and applications due to its many advantages. Early adopters of microservices have been able to provide an unprecedented level of control and speed as they deliver innovative web experiences to customers, and Netflix is a leading example.
+All major companies are now evolving from a monolithic to a microservices architecture in their websites and applications due to its many advantages. Early adopters of microservices have been able to provide an unprecedented level of control and speed as they deliver innovative web experiences to customers, and Netflix is a leading example.
 The enterprise-grade architecture that we will build throughout the course will be highly maintainable and scalable. By exploring the intricacies of the microservices architecture you will understand its advantages over a monolithic and other related architecture. By going through multiple scenarios you'll learn where to use microservices and understand the things you should take into account when building your architecture. Advanced tasks—with concepts such as Serverless computing and DevOps using AWS—will also be undertaken to help you in your next venture with confidence.
 By the end of the course, you will be ready to migrate to a microservices architecture in your organization.
 
 <H2>What You Will Learn</H2>
 <DIV class=book-info-will-learn-text>
-<UL>
-<LI>Understanding and learning microservices. 
-<LI>Setting up microservices. 
-<LI>Making a bookmark application cloud-ready. 
-<LI>Combining independent microservice UIs to a coherent user interface. </LI></UL></DIV>
+<UL>Understand the foundational elements behind the microservices architecture
+<UL>Master the key tenets/elements required to build a microservices architecture
+<UL>Observe key industry examples, lessons learned and MSA pitfalls 
+<UL>Understand the development and design practices/approaches behind the microservices architecture
+<UL>Explore non-functional requirements related to MSA such as resilience, availability, performance, security, scalability, and maintainability
+<UL>Learn about the DevOps role in MSA, particularly Continuous Integration and Deployment, and the importance of CI pipelines with a large number of microservices
+<UL>Understand with examples whether Serverless applications are suitable in MSA
+<UL>Apply your learning’s in practice, build a microservices architecture for a real-life problem and deploy your architecture in the cloud  </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
