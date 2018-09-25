@@ -7,14 +7,14 @@ By the end of the course, you will be ready to migrate to a microservices archit
 
 <H2>What You Will Learn</H2>
 <DIV class=book-info-will-learn-text>
-<UL>Understand the foundational elements behind the microservices architecture
-<UL>Master the key tenets/elements required to build a microservices architecture
-<UL>Observe key industry examples, lessons learned and MSA pitfalls 
-<UL>Understand the development and design practices/approaches behind the microservices architecture
-<UL>Explore non-functional requirements related to MSA such as resilience, availability, performance, security, scalability, and maintainability
-<UL>Learn about the DevOps role in MSA, particularly Continuous Integration and Deployment, and the importance of CI pipelines with a large number of microservices
-<UL>Understand with examples whether Serverless applications are suitable in MSA
-<UL>Apply your learning’s in practice, build a microservices architecture for a real-life problem and deploy your architecture in the cloud  </LI></UL></DIV>
+<LI>Understand the foundational elements behind the microservices architecture
+<LI>Master the key tenets/elements required to build a microservices architecture
+<LI>Observe key industry examples, lessons learned and MSA pitfalls 
+<LI>Understand the development and design practices/approaches behind the microservices architecture
+<LI>Explore non-functional requirements related to MSA such as resilience, availability, performance, security, scalability, and maintainability
+<LI>Learn about the DevOps role in MSA, particularly Continuous Integration and Deployment, and the importance of CI pipelines with a large number of microservices
+<LI>Understand with examples whether Serverless applications are suitable in MSA
+<LI>Apply your learning’s in practice, build a microservices architecture for a real-life problem and deploy your architecture in the cloud  </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
