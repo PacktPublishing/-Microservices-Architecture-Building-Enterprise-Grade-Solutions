@@ -24,7 +24,7 @@ To fully benefit from the coverage included in this course, you will need:<br/>
 <LI>Familiarity with the Python language
 <LI>An understanding of basic web technologies (HTTP, DNS, TCP/IP)
 <LI>(Optional) Familiarity with Maven/Spring
-</LI>
+
 ### Technical Requirements
 This course has the following software requirements:<br/>
 <LI>The IntelliJ IDEA editor
