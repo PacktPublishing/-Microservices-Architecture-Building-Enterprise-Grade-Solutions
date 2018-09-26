@@ -19,10 +19,21 @@ By the end of the course, you will be ready to migrate to a microservices archit
 ## Instructions and Navigation
 ### Assumed Knowledge
 To fully benefit from the coverage included in this course, you will need:<br/>
-This course will appeal to architects, designers, and developers who are primarily new to the microservices architecture and interested in migrating to it from a monolithic architecture.
+<LI>Prior working knowledge of the Java (> 7) language
+<LI>Familiarity with Unix/Linux systems & the command-line
+<LI>Familiarity with the Python language
+<LI>An understanding of basic web technologies (HTTP, DNS, TCP/IP)
+<LI>(Optional) Familiarity with Maven/Spring
+</LI>
 ### Technical Requirements
 This course has the following software requirements:<br/>
-req
+<LI>The IntelliJ IDEA editor
+<LI>Java 8
+<LI>Apache Maven
+<LI>Python
+<LI>The Postman plugin
+<LI>A new AWS account (free tier)
+</LI>
 
 ## Related Products
 * [SharePoint 2016: Architecture, Deployment and Security [Video]](https://www.packtpub.com/virtualization-and-cloud/sharepoint-2016-architecture-deployment-security-video?utm_source=github&utm_medium=repository&utm_campaign=9781788298506)
